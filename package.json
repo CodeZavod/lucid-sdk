@@ -1,0 +1,56 @@
+{
+  "name": "lucid-sdk",
+  "version": "0.0.1",
+  "description": "Lucid unofficial SDK for Node.js",
+  "author": "Vadim Petrov <imposibrus@gmail.com> (https://imposibrus.tk)",
+  "license": "MIT",
+  "main": "src/LucidSDK.js",
+  "typings": "index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "coverage": "nyc mocha"
+  },
+  "homepage": "https://github.com/CodeZavod/lucid-sdk",
+  "bugs": {
+    "url": "https://github.com/CodeZavod/lucid-sdk/issues"
+  },
+  "keywords": [
+    "sdk",
+    "lucid"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeZavod/lucid-sdk.git"
+  },
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "files": [
+    "src/",
+    "index.d.ts"
+  ],
+  "nyc": {
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "instrument": true,
+    "report-dir": "./coverage",
+    "temp-directory": "./coverage"
+  },
+  "dependencies": {
+    "date-fns": "^1.28.5",
+    "lodash.isempty": "^4.4.0",
+    "request": "^2.81.0",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3",
+    "should": "^11.2.1",
+    "sinon": "^2.3.8"
+  }
+}
